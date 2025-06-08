@@ -13,5 +13,5 @@ steps:
   - script: mvn clean install
     displayName: 'Build with Maven'
 
-  - script: java -jar target/HelloMaven-0.0.1-SNAPSHOT.jar
-    displayName: 'Run HelloMaven JAR'
+  - script: java -jar target/abc-0.0.1-SNAPSHOT.jar
+    displayName: 'Run ABC JAR'
