@@ -1,0 +1,17 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  name: Default
+
+steps:
+  - script: echo Hello, it's my Azure DevOps App
+    displayName: 'Run an echo command'
+
+  - script: mvn clean install
+    displayName: 'Build with Maven'
+
+  - script: java -jar target/HelloMaven-0.0.1-SNAPSHOT.jar
+    displayName: 'Run HelloMaven JAR'
